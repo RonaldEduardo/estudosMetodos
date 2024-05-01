@@ -7,6 +7,7 @@ public class Main {
         Scanner scan = new Scanner(in);
         Palindromo palindromo = new Palindromo();
         OrdenaArray ordenaArray = new OrdenaArray();
+        CalcularJuros calcularJuros = new CalcularJuros();
         out.printf("""
                 O que deseja fazer hoje?
 
@@ -24,7 +25,7 @@ public class Main {
         switch (userOption) {
             case 1 -> palindromo.solicitaNumero(scan);
             case 2 -> ordenaArray.solicitaArray(scan);
-//            case 3 ->
+            case 3 -> calcularJuros.solicitarJuros(scan);
 //            case 4 ->
 //            case 5 ->
 //            case 6 ->

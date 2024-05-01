@@ -5,6 +5,7 @@ import static java.lang.System.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(in);
+        Palindromo palindromo = new Palindromo();
         out.printf("""
                 O que deseja fazer hoje?
                 
@@ -15,17 +16,18 @@ public class Main {
                 5 - Combinar dois Arrays
                 6 - Calcular a distancia de dois Pontos
                 0 - Sair
-               
+               \n
                 """);
         int userOption = scan.nextInt();
 
-        switch (userOption)
-            case 1 ->
+        switch (userOption) {
+            case 1 -> palindromo.solicitaNumero(scan);
 //            case 2 ->
 //            case 3 ->
 //            case 4 ->
 //            case 5 ->
 //            case 6 ->
 //            case 0 ->
+        }
     }
 }

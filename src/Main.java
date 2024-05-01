@@ -6,9 +6,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(in);
         Palindromo palindromo = new Palindromo();
+        OrdenaArray ordenaArray = new OrdenaArray();
         out.printf("""
                 O que deseja fazer hoje?
-                
+
                 1 - Verificar se o número é um palindromo
                 2 - Ordenar um Array
                 3 - Calcular Juro Compostos
@@ -22,7 +23,7 @@ public class Main {
 
         switch (userOption) {
             case 1 -> palindromo.solicitaNumero(scan);
-//            case 2 ->
+            case 2 -> ordenaArray.solicitaArray(scan);
 //            case 3 ->
 //            case 4 ->
 //            case 5 ->

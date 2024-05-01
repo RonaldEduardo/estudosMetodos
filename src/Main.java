@@ -1,15 +1,31 @@
+import java.util.Scanner;
+import static java.lang.System.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner scan = new Scanner(in);
+        out.printf("""
+                O que deseja fazer hoje?
+                
+                1 - Verificar se o número é um palindromo
+                2 - Ordenar um Array
+                3 - Calcular Juro Compostos
+                4 - Contar quantas letras tem um palavra/frase
+                5 - Combinar dois Arrays
+                6 - Calcular a distancia de dois Pontos
+                0 - Sair
+               
+                """);
+        int userOption = scan.nextInt();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        switch (userOption)
+            case 1 ->
+//            case 2 ->
+//            case 3 ->
+//            case 4 ->
+//            case 5 ->
+//            case 6 ->
+//            case 0 ->
     }
 }

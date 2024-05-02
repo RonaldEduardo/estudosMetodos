@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Palindromo {
+    //solicita ao usuaio um numero
     public void solicitaNumero(Scanner scan){
         System.out.println("Digite um número:");
         int numero = scan.nextInt();
@@ -16,9 +17,10 @@ public class Palindromo {
             }
         }
     }
-
+    //verfica se o numero digitado é menor que 0
     private boolean verificaNumeroPositivo(int numero, Scanner scan){
         boolean numNegativo = numero <= 0 ? true : false;
+        //o usuario nao pode digita um numero menor que 0
         while (numNegativo){
             System.out.println("O número que vc digitou é menor que zero!!, digite novamente:");
             numero = scan.nextInt();
@@ -27,6 +29,7 @@ public class Palindromo {
         return true;
     }
 
+    //calculo para descobrir se o numeor é um palindromo
     private boolean verificarPalindromo(int numero){
         int numeroOriginal = numero;
         int invertido = 0;

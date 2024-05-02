@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class OrdenaArray {
     public void solicitaArray(Scanner scan){
+        //solicita o tamanho do array
         System.out.println("Digite o tamanho do array que deseja organizar:");
         int tamanhoArray = scan.nextInt();
         int[] arrayOrganizar = new int[tamanhoArray];
@@ -13,6 +14,7 @@ public class OrdenaArray {
         imprimirArray(arrayOrganizar);
         organizaArray(arrayOrganizar);
     }
+    //organiza o array digitado pelo user
     private void organizaArray(int[] arrayOrganizar){
         int tamanho = arrayOrganizar.length;
         for (int i = 0; i < arrayOrganizar.length; i++){
@@ -27,6 +29,7 @@ public class OrdenaArray {
         System.out.print("\nArray organizado: ");
         imprimirArray(arrayOrganizar);
     }
+    //imprime o array
     private void imprimirArray(int[] arrayImprimir){
         for(int i = 0; i < arrayImprimir.length; i++){
             System.out.print(arrayImprimir[i]);

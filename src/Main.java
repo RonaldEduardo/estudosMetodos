@@ -29,13 +29,13 @@ public class Main {
         scan.nextLine();
 
         switch (userOption) {
-            case 1 -> palindromo.solicitaNumero(scan);
-            case 2 -> ordenaArray.solicitaArray(scan);
-            case 3 -> calcularJuros.solicitarJuros(scan);
-            case 4 -> contarLetras.solicitarFrasePalavra(scan);
-            case 5 -> combinarArray.solicitarArray(scan);
-            case 6 -> calcularDistaciaPontos.solicitarPontos(scan);
-            case 0 -> System.out.println("Fechando!");
+            case 1 -> palindromo.solicitaNumero(scan);// solicita ao usuario um numero para verificar se é um palindromo
+            case 2 -> ordenaArray.solicitaArray(scan);// ordena um array listado pelo usuario
+            case 3 -> calcularJuros.solicitarJuros(scan);// faz o calculo de juros composto do usuario
+            case 4 -> contarLetras.solicitarFrasePalavra(scan);// conta os caracteres de um plavavra ou frase do usuario
+            case 5 -> combinarArray.solicitarArray(scan);// encontra as combinaçãoes de dois arrays digitado pelo usuario
+            case 6 -> calcularDistaciaPontos.solicitarPontos(scan);// calcula a distancia de dois pontosm, definidos pelo usuario
+            case 0 -> System.out.println("Fechando!");//acabouuuuuuuuuuu
         }
     }
 }

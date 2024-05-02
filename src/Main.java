@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import static java.lang.System.*;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(in);
@@ -9,6 +8,7 @@ public class Main {
         OrdenaArray ordenaArray = new OrdenaArray();
         CalcularJuros calcularJuros = new CalcularJuros();
         ContarLetras contarLetras = new ContarLetras();
+        CombinarArray combinarArray = new CombinarArray();
         out.printf("""
                 O que deseja fazer hoje?
 
@@ -29,7 +29,7 @@ public class Main {
             case 2 -> ordenaArray.solicitaArray(scan);
             case 3 -> calcularJuros.solicitarJuros(scan);
             case 4 -> contarLetras.solicitarFrasePalavra(scan);
-            case 5 ->
+            case 5 -> combinarArray.solicitarArray(scan);
 //            case 6 ->
 //            case 0 ->
         }

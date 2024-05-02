@@ -8,6 +8,7 @@ public class Main {
         Palindromo palindromo = new Palindromo();
         OrdenaArray ordenaArray = new OrdenaArray();
         CalcularJuros calcularJuros = new CalcularJuros();
+        ContarLetras contarLetras = new ContarLetras();
         out.printf("""
                 O que deseja fazer hoje?
 
@@ -21,13 +22,14 @@ public class Main {
                \n
                 """);
         int userOption = scan.nextInt();
+        scan.nextLine();
 
         switch (userOption) {
             case 1 -> palindromo.solicitaNumero(scan);
             case 2 -> ordenaArray.solicitaArray(scan);
             case 3 -> calcularJuros.solicitarJuros(scan);
-//            case 4 ->
-//            case 5 ->
+            case 4 -> contarLetras.solicitarFrasePalavra(scan);
+            case 5 ->
 //            case 6 ->
 //            case 0 ->
         }

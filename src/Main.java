@@ -9,6 +9,11 @@ public class Main {
         CalcularJuros calcularJuros = new CalcularJuros();
         ContarLetras contarLetras = new ContarLetras();
         CombinarArray combinarArray = new CombinarArray();
+        CalcularDistaciaPontos calcularDistaciaPontos = new CalcularDistaciaPontos();
+
+        System.out.print("\033[H\033[2J"); // Limpa a tela
+        System.out.flush();// limpa o buffer de saida
+
         out.printf("""
                 O que deseja fazer hoje?
 
@@ -19,7 +24,6 @@ public class Main {
                 5 - Combinar dois Arrays
                 6 - Calcular a distancia de dois Pontos
                 0 - Sair
-               \n
                 """);
         int userOption = scan.nextInt();
         scan.nextLine();
@@ -30,8 +34,8 @@ public class Main {
             case 3 -> calcularJuros.solicitarJuros(scan);
             case 4 -> contarLetras.solicitarFrasePalavra(scan);
             case 5 -> combinarArray.solicitarArray(scan);
-//            case 6 ->
-//            case 0 ->
+            case 6 -> calcularDistaciaPontos.solicitarPontos(scan);
+            case 0 -> System.out.println("Fechando!");
         }
     }
 }
